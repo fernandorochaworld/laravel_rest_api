@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Inteligenti-Laravel RWS",
+		"_postman_id": "95f2096a-ff41-0776-da43-e4e299cd4137",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://laravelrws.com/public/api/auth/user",
+			"request": {
+				"url": "http://laravelrws.com/public/api/auth/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJjZmVjZjYwNWU1MjU3ZTQxZjczNDM1MDY0OWU0ODQxZWIzMzFmMWE0YWEyNTNhNWM3NDg3NzJlZjcxYTVkN2IyNjY5NjlhY2JhZGZhZTkwIn0.eyJhdWQiOiIxIiwianRpIjoiYmNmZWNmNjA1ZTUyNTdlNDFmNzM0MzUwNjQ5ZTQ4NDFlYjMzMWYxYTRhYTI1M2E1Yzc0ODc3MmVmNzFhNWQ3YjI2Njk2OWFjYmFkZmFlOTAiLCJpYXQiOjE1NDU2NjIyNzUsIm5iZiI6MTU0NTY2MjI3NSwiZXhwIjoxNTc3MTk4Mjc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.KXMtDrP1B29fGYfmmQeXv1rTuqPvqQZv8_JCwwi-ym6TTA0Swo1wXZb4drQu5V9a7JXurhRXcdou3iCFd_GrBMU07AKhsXMmFXYeBtHbVgNDNFgKta5PY55r5Hj_s5uwoEhaH21Xc8DFV6-ua8FcnANDRaRGjvl_80fQYlRHDO-QRC7y3BwI62LKdEAYj9ZlUCgmczxaJXCgWZO26ebC_cct_Kcobig08jELkmw2syfjikZInouBt3WKGtW0rGYzEP-CkfxzdNhYtNWxNIWe5u6lNgkzRhB5N0hi_6jJzFTOmb__sMUJibaS0VIWUZqyuZ7_8CffjcB-oecoTAaTfqEK4HISDR7MIfYsK3u7gjINyn0_PM0Kt28-i5kXvFFf8G-mujVz4r5rOOdLnnJMEWnio2ChAkq0MKlqThxqkF0yzjRNOF2UWRcdv5vYKPjayvRh9-pRIicKyZ6Oa7XsEG2h3KNwP3GKx_AvfZBV9Eel1Z8fJN_oOuQe2dp6_kI0JP8o1Zs4US2b5SmLzup6xSScksFz7Pg2NU-IbtJLkEFw1c1eFX1fhnKFIg5FW-81L4fxwdfxLj0FPHQpJCsTn64sQQX4qYbPmraJCA4_n2igYB3AkbEXhHa5VlDfWFmUosKRH9G5Pzj0tYUcLwHZBKm1Y7D1n3o6_RgvEdh98c4",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"admin@gmail.com\",\n\t\"password\": \"123456\",\n\t\"remember_me\": true\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://laravelrws.com/public/api/auth/login",
+			"request": {
+				"url": "http://laravelrws.com/public/api/auth/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"admin@gmail.com\",\n\t\"password\": \"123456\",\n\t\"remember_me\": true\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://laravelrws.com/public/api/auth/signup",
+			"request": {
+				"url": "http://laravelrws.com/public/api/auth/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"admin\",\n\t\"email\": \"admin@gmail.com\",\n\t\"password\": \"123456\",\n\t\"password_confirmation\": \"123456\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
